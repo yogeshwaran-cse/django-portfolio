@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'myprofile/css/styles.css' %}">
+    <title>Portfolio | Computer Science & Engineering</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Research & Projects</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="about-flex">
+            <img src="{% static 'myprofile\images\My Photo.jpeg' %}" alt="Yogeshwaran K" class="profile-img">
+            <div>
+                <h1>Yogeshwaran K</h1>
+                <h3>Computer Science & Engineering Graduate</h3>
+                <p>I am a Computer Science graduate specializing in deep learning and quantum machine learning, with a real passion for solving complex technical problems. I look forward to working within collaborative environments where I can apply my computer vision background to build impactful real-world solutions, while continuing to grow as a developer.</p>
+                <p>I am proficient in both English and Tamil, preparing academic abstracts and technical documentation across both languages.</p>
+                
+                <details>
+                    <summary>Academic Profile & Credentials</summary>
+                    <div style="padding-top: 0.5rem;">
+                        <div class="timeline-item">
+                            <strong>M.E. Computer Science and Engineering</strong> (2026)<br>
+                            Annamalai University | CGPA: 8.4
+                        </div>
+                        <div class="timeline-item">
+                            <strong>B.E. Computer Science and Engineering</strong> (2024)<br>
+                            Anjalai Ammal Mahalingam Engineering College | CGPA: 8.24
+                        </div>
+                        <div class="timeline-item">
+                            <strong>HSC Standard</strong> (2020)<br>
+                            New Bharath Matric. Hr. Sec. School | Percentage: 86.2%
+                        </div>
+                        <div class="timeline-item">
+                            <strong>SSLC Standard</strong> (2018)<br>
+                            New Bharath Matric. Hr. Sec. School | Percentage: 72.1%
+                        </div>
+                    </div>
+                </details>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <h2>Research & Core Projects</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="{% static 'myprofile\images\quantum.jpg' %}" alt="Hybrid Quantum-Classical Architecture">
+                <h3>Hybrid Quantum-Classical Image Classification</h3>
+                <p><em>M.E. Final Year Project</em></p>
+                <p>Developed and deployed hybrid Quantum-Classical ML algorithms (QSVM, QCNN & Modified QKNN) for medical image classification pipelines. Evaluated model configurations meticulously both with pretrained and without pretrained weights on complex imaging datasets.</p>
+                <p><strong>Architecture:</strong> PyTorch utilized for robust deep feature extraction, seamlessly coupled with AWS Braket and IonQ backends for physical quantum execution pipelines.</p>
+                <div>
+                    <span class="tag">Quantum ML</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">AWS Braket</span>
+                    <span class="tag">IonQ</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'myprofile\images\flood.jpg' %}" alt="Flood Image Segmentation Example">
+                <h3>Flood Image Segmentation</h3>
+                <p><em>M.E. 2nd Semester Mini Project</em></p>
+                <p>Implemented a U-Net deep learning architecture to perform highly accurate semantic segmentation on aerial flood imagery.</p>
+                <p><strong>Methodology:</strong> Processed and analyzed complex spatial data to effectively delineate flooded regions, demonstrating strong proficiency in advanced computer vision techniques.</p>
+                <div>
+                    <span class="tag">U-Net</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Deep Learning</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'myprofile\images\medicinal.jpg' %}" alt="Medicinal Plants">
+                <h3>Medicinal Plant Image Classification</h3>
+                <p><em>B.E. Final Year Project</em></p>
+                <p>Built and trained a deep learning pipeline utilizing the VGG16 convolutional neural network architecture for the accurate classification of medicinal plant images.</p>
+                <p><strong>Methodology:</strong> Evaluated model accuracy, extracted relevant image features, and optimized hyperparameters to achieve robust predictive performance.</p>
+                <div>
+                    <span class="tag">VGG16</span>
+                    <span class="tag">CNN</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical Stack & Certifications</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Core Technologies</h3>
+                <ul>
+                    <li><strong>Languages:</strong> Python, Java, C, SQL, JavaScript</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap</li>
+                    <li><strong>Cloud & Quantum:</strong> AWS (S3, Braket)</li>
+                    <li><strong>Areas of Focus:</strong> AI, Deep Learning, Quantum Computing, Database Management</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Certifications</h3>
+                <ul>
+                    <li><strong>Python Zero to Hero</strong> – Guvi</li>
+                    <li><strong>Data Analytics using Python</strong> – NPTEL by IIT Madras</li>
+                    <li><strong>AI and ML Summer Workshop</strong> – IIT Madras</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section bg-light">
+        <h2>Hobbies & Interests</h2>
+        <div class="about-flex">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.LbefVzyHUNmn3SCsAsj79AHaEK?pid=Api&P=0&h=180" alt="PC Gaming Setup" style="width: 200px; height: 150px; border-radius: 8px; object-fit: cover;">
+            <div>
+                <h3>PC Gaming & Library Optimization</h3>
+                <p>Outside of compiling quantum circuits, evaluating model layers, and drafting thesis documentation, I am a passionate gaming enthusiast. I enjoy diving into immersive worlds like <em>BioShock Remastered</em>, and I spend time keeping my digital library perfectly organized by manually integrating non-Steam titles (such as those from GOG) directly through the Steam client interface for a seamless, unified configuration.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="feedback">
+        <h2>Feedback & Contact</h2>
+        <p>Based in Thiruvarur, Tamil Nadu. Let's collaborate on cutting-edge machine learning and quantum solutions!</p>
+        <p><strong>Email:</strong> ka.yogeshwaran@gmail.com | <strong>Phone:</strong> +91 6382437292</p>
+        
+        <form class="feedback-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Feedback or Message" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        
+        <p><small>&copy; 2026 Yogeshwaran K. All Rights Reserved.</small></p>
+    </footer>
+
+</body>
+</html>
