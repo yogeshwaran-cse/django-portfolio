@@ -1,0 +1,15 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Django local configurations & database
+db.sqlite3
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Static & Media directories collected during deployment
+/staticfiles/
